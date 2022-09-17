@@ -1,0 +1,24 @@
+{
+    "tag": "vmess",
+    "protocol": "vmess",
+    "settings": {
+        "vnext": [
+            {
+                "address": "www.host.com",
+                "port": 443,
+                "users": [
+                    {
+                        "id": "uuid"
+                    }
+                ]
+            }
+        ]
+    },
+    "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+            "path": "/path"
+        }
+    }
+}

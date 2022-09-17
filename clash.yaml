@@ -1,0 +1,12 @@
+name: vmess
+type: vmess
+server: www.host.com
+port: 443
+uuid: uuid
+alterId: 0
+cipher: auto
+tls: true
+servername: www.host.com
+network: ws
+ws-opts:
+  path: /path

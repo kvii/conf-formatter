@@ -1,0 +1,14 @@
+{
+    "v": "2",
+    "ps": "vmess",
+    "add": "www.host.com",
+    "port": "443",
+    "id": "uuid",
+    "aid": "0",
+    "net": "ws",
+    "type": "none",
+    "host": "www.host.com",
+    "path": "/path",
+    "tls": "tls",
+    "sni": ""
+}
