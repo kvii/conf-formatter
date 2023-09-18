@@ -62,7 +62,7 @@ func v2rayNFromV2ray(v V2ray) V2rayN {
 		Port:       strconv.Itoa(v.Settings.VNext[0].Port),
 		Uuid:       v.Settings.VNext[0].Users[0].Id,
 		AlterId:    "0",
-		Security:   v.StreamSettings.Security,
+		Security:   "auto",
 		Net:        v.StreamSettings.Network,
 		Type:       "none",
 		Host:       v.Settings.VNext[0].Address,

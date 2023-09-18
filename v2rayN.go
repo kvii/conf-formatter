@@ -24,19 +24,21 @@ import (
 //	3. QUIC->key/Kcp->seed
 //	4. grpc->serviceName
 type V2rayN struct {
-	Version    string `json:"v"`             // 配置文件版本号,主要用来识别当前配置
-	Alias      string `json:"ps"`            // 备注或别名
-	Addr       string `json:"add"`           // 地址IP或域名
-	Port       string `json:"port"`          // 端口号
-	Uuid       string `json:"id"`            // UUID
-	AlterId    string `json:"aid"`           // alterId
-	Security   string `json:"scy,omitempty"` // 加密方式(security),没有时值默认auto
-	Net        string `json:"net"`           // 传输协议(tcp\kcp\ws\h2\quic)
-	Type       string `json:"type"`          // 伪装类型(none\http\srtp\utp\wechat-video) *tcp or kcp or QUIC
-	Host       string `json:"host"`          // 伪装的域名
-	Path       string `json:"path"`          // 路径
-	Tls        string `json:"tls"`           // 底层传输安全(tls)
-	ServerName string `json:"sni"`           // 服务器名
+	Version     string `json:"v"`             // 配置文件版本号,主要用来识别当前配置
+	Alias       string `json:"ps"`            // 备注或别名
+	Addr        string `json:"add"`           // 地址IP或域名
+	Port        string `json:"port"`          // 端口号
+	Uuid        string `json:"id"`            // UUID
+	AlterId     string `json:"aid"`           // alterId
+	Security    string `json:"scy,omitempty"` // 加密方式(security),没有时值默认auto
+	Net         string `json:"net"`           // 传输协议(tcp\kcp\ws\h2\quic)
+	Type        string `json:"type"`          // 伪装类型(none\http\srtp\utp\wechat-video) *tcp or kcp or QUIC
+	Host        string `json:"host"`          // 伪装的域名
+	Path        string `json:"path"`          // 路径
+	Tls         string `json:"tls"`           // 底层传输安全(tls)
+	ServerName  string `json:"sni"`           // 服务器名
+	Alpn        string `json:"alpn"`
+	Fingerprint string `json:"fp"`
 }
 
 func (v *V2rayN) String() string {
